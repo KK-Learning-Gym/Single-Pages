@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Varela+Round&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
     /* border-style: solid;
     border-width: 0.5px; */
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -76,7 +80,13 @@ li {
 #catchphrase {
     font-size: 4rem;
 }
-/*
-font-family: 'PT Serif', serif;
-font-family: 'Roboto', sans-serif;
-*/
+
+@media screen and (max-width: 800px) {
+    #container {
+        margin: 0 15px;
+    }
+
+    #catchphrase {
+        font-size: 3rem;
+    }
+  }
