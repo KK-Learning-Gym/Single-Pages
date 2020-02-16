@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Varela+Round&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /* border-style: solid;
+    border-width: 0.5px; */
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.red {
+    color: crimson;
+}
+
+#logo-img {
+    transform: rotate(90deg);
+}
+
+img {
+    filter: invert(100%);
+    margin: 5px;
+}
+
+#page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+#links {
+    display: inline-block;
+}
+
+p {
+    margin-top: 8px;
+}
+
+li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.captext {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 700;
+}
+
+.normtext {
+    font-family: 'Libre Baskerville', serif;
+}
+
+#catchphrase {
+    font-size: 4rem;
+}
+/*
+font-family: 'PT Serif', serif;
+font-family: 'Roboto', sans-serif;
+*/
