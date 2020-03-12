@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap');
+:root {
+    --main-bg-color: #151515;
+    --text-color: #fff;
+    --dull-color: #a1a1a1;
+    --fixed-height: 60px;
+    --form-width: 300px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    /* border: orangered;
+    border-style: solid;
+    border-width: 0.05px; */
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    line-height: 2;
+}
+
+section {
+    display: flex;
+    height: 100%;
+}
+
+footer {
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+form {
+    font-weight: 200;
+    min-width: var(--form-width);
+}
+
+input, textarea {
+    border: none;
+    background: none;
+    outline: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+    color: var(--text-color);
+    min-height: 40px;
+    border-bottom: solid 0.1px;
+    border-color: var(--dull-color);
+    min-height: var(--fixed-height);
+    min-width: var(--form-width);
+    font-weight: 200;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--text-color);
+}
+
+input {
+    display: block;
+    font-size: 1.3rem;
+}
+
+textarea {
+    font-size: 1rem;
+}
+
+button {
+    height: var(--fixed-height);
+    width: var(--form-width);
+    cursor: pointer;
+    background-color: #fff;
+    font-weight: 300;
+    font-size: 1rem;
+    border: none;
+}
+
+a, a:hover, a:focus, a:active, a:link {
+    text-decoration: none;
+    color: var(--text-color)
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-6 {
+    flex: 6;
+}
+
+.flex-7 {
+    flex: 7;
+}
+
+.dull {
+    color: var(--dull-color)
+}
+
+.fixedheight {
+    min-height: var(--fixed-height);
+}
+
+.small-text {
+    font-size: 0.75rem;
+}
+
+.top-border {
+    border-top: solid 0.1px;
+    border-color: var(--dull-color);
+}
+
+.bottom-border {
+    border-bottom: solid 0.1px;
+    border-color: var(--dull-color);
+}
+
+.left-border {
+    border-left: solid 0.1px;
+    border-color: var(--dull-color);
+}
+
+.right-border {
+    border-right: solid 0.1px;
+    border-color: var(--dull-color);
+}
+
+section>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>li {
+    flex-direction: column;
+}
+
+#nav-main {
+    justify-content: space-around;
+    width: 100%;
+}
+
+::placeholder {
+    color: var(--text-color);
+    font-size: 1.3rem;
+}
+
+.glitch {
+    position: relative;
+    color: var(--text-color);
+}
+
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    left: -2px;
+    text-shadow: -2px 0 #30f3ff, 2px 2px #ea3a01;
+}
+
+.glitch-btn {
+    position: relative;
+    color: black;
+    left: -2px;
+    box-shadow: -2px 0 #30f3ff, 2px 2px #ea3a01;
+}
+
+.menu-icon {
+    height: 30px;
+    width: 30px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.menu-icon {
+    height: 14px;
+    width: 30px;
+    position: fixed;
+    cursor: pointer;
+}
+
+.menu-icon__line {
+    height: 2px;
+    width: 30px;
+    display: block;
+    background-color: #fff;
+    margin-bottom: 4px;
+}
+
+.menu-icon__line-left {
+    width: 15px;
+}
+
+.menu-icon__line-right {
+    width: 10px;
+    float: right;
+}
+
+@media screen and (max-width: 800px) {
+    /* applies styles to any device screen sizes below 800px wide */
+    section {
+        flex-direction: column-reverse;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    footer>ul {
+        flex-direction: column;
+    }
+    footer>ul>li.left-border {
+        border: none;
+    }
+    footer>ul>li.right-border {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    div[data-text] {
+        font-size: 2rem !important;
+    }
+}
