@@ -88,6 +88,14 @@ button:hover {
     color: var(--color-alt3);
 }
 
+/* .tech-box {
+    background-color: var(--color-text);
+    color: var(--color-alt3);
+    width: 100%;
+    border-radius: 1rem;
+    padding: 0.2rem 1rem;
+} */
+
 .images {
     display: flex;
     flex-direction: column;
