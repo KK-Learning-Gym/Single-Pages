@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Eczar';
+    src: url('./fonts/Eczar/Eczar-Regular.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('./fonts/Inconsolata/Inconsolata-Regular.ttf') format('truetype')
+}
+
+:root {
+    --color-primary: #bad5ca;
+    --color-text: #000;
+    --color-alt1: #dc6e25;
+    --color-alt2: #548d6c;
+    --color-alt3: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border-style: solid;
+    border-color: orangered;
+    border-width: 0.2px; */
+}
+
+html, body {
+    font-family: 'Eczar'
+}
+
+body {
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav, footer {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color: var(--color-text);
+    color: #fff;
+}
+
+header {
+    background-color: var(--color-alt2);
+    color: var(--color-alt3);
+    text-align: center;
+    font-size: 4rem;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    height: auto;
+    width: 70vw;
+    margin: 2rem auto;
+    border: solid;
+    border-width: 0.8rem;
+    border-radius: 0.3rem;
+    border-color: var(--color-alt3);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    border: none;
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+    margin: 3rem auto;
+    cursor: pointer;
+    appearance: none;
+    outline: 0;
+}
+
+button:hover {
+    background-color:var(--color-alt2);
+    color: var(--color-alt3);
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mono {
+    font-family: 'Inconsolata';
+}
+
+.inline-block {
+    display: inline-block;
+    margin: 0.5rem 0.5rem;
+    opacity: 90%;
+}
+
+@media screen and (max-width: 500px) {
+    nav {
+        position: fixed;
+    }
+    section {
+        margin-top: 3rem;
+    }
+}
