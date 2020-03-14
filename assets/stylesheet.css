@@ -51,7 +51,16 @@ header {
     background-color: var(--color-alt2);
     color: var(--color-alt3);
     text-align: center;
-    font-size: 4rem;
+    line-height: 1.25;
+}
+
+.title {
+    font-size: 3rem;
+    ;
+}
+
+.small {
+    font-size: 1rem;
 }
 
 ul {
@@ -84,7 +93,7 @@ button {
 }
 
 button:hover {
-    background-color:var(--color-alt2);
+    background-color: var(--color-alt2);
     color: var(--color-alt3);
 }
 
@@ -113,6 +122,15 @@ button:hover {
     opacity: 90%;
 }
 
+.nav-link {
+    border-bottom: none;
+    transition: all ease-in 0.6s;
+}
+
+.nav-link:hover {
+    border-bottom: solid 1px;
+}
+
 @media screen and (max-width: 500px) {
     nav {
         position: fixed;
@@ -121,3 +139,40 @@ button:hover {
         margin-top: 3rem;
     }
 }
+
+
+/* #examples .example .hover {
+    transition: all 0.2s ease-in-out;
+    position: relative;
+  }
+ .hover:before, .hover:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 0px;
+    height: 5px;
+    margin: 5px 0 0;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.75s;
+    opacity: 0;
+    background-color: pink;
+  }
+  .hover.hover-1:before, .hover.hover-1:after {
+    left: 0;
+  }
+  .example:hover {
+    cursor: pointer;
+  }
+  .example:hover .hover:before, .example:hover .hover:after {
+    width: 100%;
+    opacity: 1;
+  }
+  /* <main>
+  <div id="examples">
+
+    <div class="example">
+      <span class="hover hover-1">This underline goes left to right</span>
+    </div>
+  
+</main>
+https://codepen.io/mxttsco/pen/KgodYm   */ */

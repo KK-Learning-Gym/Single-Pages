@@ -218,6 +218,12 @@ footer>li {
     transition: width 0.5s;
 }
 
+/* Apply :hover to the container, then change the children with it
+Attribution: itty53 on Reddit */
+.menu-icon:hover .menu-icon__line-left, .menu-icon:hover .menu-icon__line-right {
+    width: 30px;
+}
+
 @media screen and (max-width: 800px) {
     /* applies styles to any device screen sizes below 800px wide */
     section {
